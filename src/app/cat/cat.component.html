@@ -1,0 +1,11 @@
+<button mat-stroked-button (click)="clickCat.emit(cat)">
+  <mat-card-header>
+    <mat-card-title *ngIf="cat.foo.bar">{{cat.name}}</mat-card-title>
+    <mat-card-subtitle>Cat</mat-card-subtitle>
+  </mat-card-header>
+  <img [src]="cat.imageUrl" [alt]="cat.name"/>
+  <mat-card-content>
+    <p>Clicked {{cat.numClicks}} times</p>
+  </mat-card-content>
+</button>
+
