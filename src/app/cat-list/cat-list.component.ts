@@ -9,7 +9,7 @@ import { Cat } from '../cat.model';
         mat-list-item
         *ngFor="let cat of cats"
         [cat]="cat"
-        (clickCat)="onClickCat($event)"
+        (clickCat)="onClickCat()"
       ></app-cat>
     </mat-list>
   `,
